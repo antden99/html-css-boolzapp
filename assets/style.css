@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px dashed;
+}
+
+/* #region Color */
+
+:root{
+    --color-marine:#009688;
+    --color-sky:#8edafc;
+    --color-green:#d5f9ba;
+    --color-light-dark:#b9b6b4;
+    --color-light:#f3eeea;
+    --color-dark:#6b7376;
+}
+
+
+/* #endregion Colore */
