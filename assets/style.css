@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,14 +7,75 @@
 
 /* #region Color */
 
-:root{
-    --color-marine:#009688;
-    --color-sky:#8edafc;
-    --color-green:#d5f9ba;
-    --color-light-dark:#b9b6b4;
-    --color-light:#f3eeea;
-    --color-dark:#6b7376;
+:root {
+    --color-marine: #009688;
+    --color-sky: #8edafc;
+    --color-green: #d5f9ba;
+    --color-light-dark: #b9b6b4;
+    --color-light: #f3eeea;
+    --color-dark: #6b7376;
 }
 
 
-/* #endregion Colore */
+/* #endregion Color */
+
+
+
+.contenitor {
+    width: 80%;
+    margin: auto;
+    max-width: 1900px;
+    background-color: var(--color-sky);
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: ;
+}
+
+.col-12 {
+    width: calc((100% / 12) * 12);
+    background-color: green;
+}
+
+.col-4 {
+    width: calc((100% / 12) * 4);
+    background-color: pink;
+
+}
+
+.col-8 {
+    width: calc((100% / 12) * 8);
+
+}
+
+.user_0,
+.user_2 {
+    height: 70px;
+    background-color: #d5f9ba;
+}
+
+.user_1,
+.user_3 {
+    height: 70px;
+    background-color: red;
+}
+
+
+.chat {
+    height: 100%;
+    background-color: aquamarine;
+}
+
+.right {
+    width: 70%;
+    margin-left: auto;
+    background-color: #6b7376;
+}
+
+.left {
+    width: 70%;
+    background-color: #6b7376;
+}
