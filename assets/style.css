@@ -11,7 +11,7 @@ img {
     
 }
 body{
-    background-color:var(--color-light-dark) ;
+    background-color:#dbdbd3 ;
 }
 .image {
     width: 60px;
