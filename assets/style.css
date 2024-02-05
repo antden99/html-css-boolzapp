@@ -98,4 +98,15 @@
     }
 }
 
+@media screen and (max-width:540px) {
+    .col-12-mobile{
+        width: calc((100% / 12) * 12);
+        
+    }
+
+    .col-1-tablet{
+        display: none;
+    }
+}
+
 
