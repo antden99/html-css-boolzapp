@@ -10,7 +10,9 @@ img {
     border-radius: 50%;
     
 }
-
+body{
+    background-color:var(--color-light-dark) ;
+}
 .image {
     width: 60px;
     aspect-ratio: 1;
@@ -30,19 +32,29 @@ img {
 
 /* #endregion Color */
 
-
-.contenitor {
+header{
+    background-color: var(--color-marine);
+    position: relative;
+}
+.container {
     width: 80%;
     margin: auto;
     max-width: 1900px;
-    border: 1px solid;
-    height: 100%;
-    overflow-y: auto;
+    height: 100%;   
+    z-index: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
 }
+header{
+    height: 100px;
 
+}
 .wrapper {
     height: 100vh;
-
 }
 .text_chat{
     opacity: 0.5; 
@@ -54,7 +66,7 @@ img {
 .row {
     display: flex;
     flex-wrap: wrap;
-    height: calc((100vh - 140px - 40px));
+    height: 100%;
 }
 
 .col-12 {
@@ -66,6 +78,8 @@ img {
     width: calc((100% / 12) * 4);
     border-right: 2px solid;
     background-color: var(--color-light); 
+    overflow-y:auto ;
+    height: 100%;
 }
 
 .col-8 {
@@ -102,7 +116,6 @@ ul{
     
 }
 
-
 .right {
     width: 70%;
     margin-left: auto;
@@ -126,6 +139,9 @@ ul{
 .section_message {
     padding: 20px;
     background-image: url(./img/mine.jpg);
+    height: calc((100vh - 70px - 70px - 20px));
+    overflow-y: auto;
+    
 }
 
 .user_1>.bell {
@@ -170,6 +186,10 @@ input{
     font-size: 25px;
 }
 
+.scroll-column{
+    overflow-y: auto;
+    height: 100%; 
+}
 
 /* #region Media */
 
