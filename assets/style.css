@@ -2,17 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'PT Sans', sans-serif;;
+    font-family: 'PT Sans', sans-serif;
+    ;
 }
 
 img {
     width: 100%;
-    border-radius: 50%;   
+    border-radius: 50%;
 }
-body{
-    background: linear-gradient(to bottom ,#009688,#009688 150px , #f3eeea, #f3eeea 0px);
-    
+
+body {
+    background: linear-gradient(to bottom, #009688, 150px, #f3eeea 0px);
+
 }
+
 .image {
     width: 60px;
     aspect-ratio: 1;
@@ -32,15 +35,13 @@ body{
 
 /* #endregion Color */
 
-header{
-    background-color: var(--color-marine);
-    position: relative;
-}
+
+
 .container {
     width: 80%;
     margin: auto;
     max-width: 1900px;
-    height: 100%;   
+    height: 100%;
     z-index: 1;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -48,25 +49,25 @@ header{
     left: 0;
     right: 0;
     top: 0;
-    
-}
-header{
-    height: 100px;
 
 }
+
+
 .wrapper {
     height: 100vh;
 }
-.text_chat{
-    opacity: 0.5; 
+
+.text_chat {
+    opacity: 0.5;
 }
-.time{
+
+.time {
     margin-left: auto;
     opacity: 0.5;
 }
+
 .row {
     display: flex;
-    flex-wrap: wrap;
     height: 100%;
 }
 
@@ -75,26 +76,25 @@ header{
 
 }
 
+.users {
+    overflow-y: auto;
+    height: calc((100% - 210px));
+}
+
 .col-4 {
     width: calc((100% / 12) * 4);
-    background-color: var(--color-light); 
-    overflow-y:auto ;
-    height: 100%;
+    background-color: var(--color-light);
     border: 1px solid;
 }
 
 .col-8 {
     width: calc((100% / 12) * 8);
-    background-color: var(--color-light); 
+    background-color: var(--color-light);
     border: 1px solid;
 }
 
 
-.user_2 {
-    padding-left: 8px;
-    padding-right: 10px;
-}
-ul{
+ul {
     list-style: none;
     display: flex;
     gap: 15px;
@@ -103,22 +103,23 @@ ul{
 
 .user_1 {
     padding: 5px;
-    background-color: var(--color-sky);   
+    background-color: var(--color-sky);
     padding-left: 10px;
 }
 
 [class^="user_"] {
-    display: flex;   
+    display: flex;
     align-items: center;
     padding-left: 8px;
     padding-right: 10px;
     gap: 10px;
-    border-bottom: 0.1px solid;
-    height: 70px;   
+    height: 70px;
 }
-.selection:hover{
+
+.selection:hover {
     background-color: var(--color-light-dark);
 }
+
 .right {
     width: 70%;
     margin-left: auto;
@@ -128,7 +129,7 @@ ul{
     border-radius: 10px;
     margin-bottom: 15px;
     position: relative;
-    
+
 }
 
 .left {
@@ -140,18 +141,20 @@ ul{
     position: relative;
 
 }
-.info_message{
+
+.info_message {
     position: absolute;
     top: 10px;
     right: 10px;
-    
+
 }
+
 .section_message {
     padding: 20px;
     background-image: url(./img/mine.jpg);
     height: calc((100vh - 70px - 70px - 20px));
     overflow-y: auto;
-    
+
 }
 
 .user_1>.bell {
@@ -160,47 +163,52 @@ ul{
     border-radius: 50%;
     padding: 10px;
     color: var(--color-sky);
-    
+
 }
 
 .function {
     font-size: 25px;
-    color: var(--color-light-dark);  
+    color: var(--color-light-dark);
     margin-left: auto;
 }
 
 .search{
-    padding: 10px;
-    width: 100%;
     background-color: white;
+    width: 100%;
+    padding: 10px;
 }
 
-input{
+input {
     width: 100%;
     height: 30px;
 }
-.write{
+
+.write {
     width: 80%;
-    
+
 }
-.emoji{
+
+.emoji {
     width: 10%;
     display: flex;
     justify-content: center;
     font-size: 25px;
 }
-.registration{
+
+.registration {
     width: 10%;
     display: flex;
     justify-content: center;
     font-size: 25px;
 }
-.menu_tendina{
+
+.menu_tendina {
     display: none;
 }
-.info_message:hover{
-    
-    .menu_tendina{
+
+.info_message:hover {
+
+    .menu_tendina {
         width: 200px;
         position: absolute;
         top: 20px;
@@ -215,32 +223,40 @@ input{
         }
     }
 }
+
 /* #region Media */
 
 @media screen and (max-width:991px) {
     .col-1-tablet {
-        width: calc((100% / 12) * 1);       
+        width: calc((100% / 12) * 1);
+        min-width: 70px;
     }
 
     .col-11-tablet {
         width: calc((100% / 12) * 11);
     }
 
-    .user_0 >.function {
+    .user_0>.function {
         display: none;
     }
 
-    .user_1, .user_2 {
-        display: none;
-    }
-    .name_chat{
-        display: none;
-    }
-    .time{
+    .user_1,
+    .user_2 {
         display: none;
     }
 
-   
+    .name_chat {
+        display: none;
+    }
+
+    .time {
+        display: none;
+    }
+
+    .users {
+        height: calc(100% - 70px);
+    }
+
 }
 
 @media screen and (max-width:540px) {
