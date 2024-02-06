@@ -43,8 +43,8 @@ body {
     max-width: 1900px;
     height: 100%;
     z-index: 1;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     position: absolute;
     left: 0;
     right: 0;
@@ -101,13 +101,13 @@ ul {
     color: var(--color-light-dark);
 }
 
-.user_1 {
+.notification {
     padding: 5px;
     background-color: var(--color-sky);
     padding-left: 10px;
 }
 
-[class^="user_"] {
+[class^="user_"],.profile, .notification, .box_search {
     display: flex;
     align-items: center;
     padding-left: 8px;
@@ -152,12 +152,12 @@ ul {
 .section_message {
     padding: 20px;
     background-image: url(./img/mine.jpg);
-    height: calc((100vh - 70px - 70px - 20px));
+    height: calc((100vh - 70px - 70px - 60px));
     overflow-y: auto;
 
 }
 
-.user_1>.bell {
+.notification>.bell {
     font-size: 25px;
     background-color: white;
     border-radius: 50%;
@@ -236,12 +236,12 @@ input {
         width: calc((100% / 12) * 11);
     }
 
-    .user_0>.function {
+    .profile>.function {
         display: none;
     }
 
-    .user_1,
-    .user_2 {
+    .notification,
+    .box_search {
         display: none;
     }
 
