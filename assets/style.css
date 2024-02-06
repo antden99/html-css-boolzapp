@@ -7,11 +7,11 @@
 
 img {
     width: 100%;
-    border-radius: 50%;
-    
+    border-radius: 50%;   
 }
 body{
-    background-color:#dbdbd3 ;
+    background: linear-gradient(to bottom ,#009688,#009688 150px , #f3eeea, #f3eeea 0px);
+    
 }
 .image {
     width: 60px;
@@ -186,17 +186,12 @@ input{
     font-size: 25px;
 }
 
-.scroll-column{
-    overflow-y: auto;
-    height: 100%; 
-}
 
 /* #region Media */
 
 @media screen and (max-width:991px) {
     .col-1-tablet {
         width: calc((100% / 12) * 1);
-
     }
 
     .col-11-tablet {
