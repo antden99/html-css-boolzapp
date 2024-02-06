@@ -114,10 +114,11 @@ ul{
     padding-right: 10px;
     gap: 10px;
     border-bottom: 0.1px solid;
-    height: 70px;
-    
+    height: 70px;   
 }
-
+.selection:hover{
+    background-color: var(--color-light-dark);
+}
 .right {
     width: 70%;
     margin-left: auto;
