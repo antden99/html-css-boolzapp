@@ -84,13 +84,13 @@ body {
 .col-4 {
     width: calc((100% / 12) * 4);
     background-color: var(--color-light);
-    border: 1px solid;
+    border: 1px solid var(--color-light-dark);
 }
 
 .col-8 {
     width: calc((100% / 12) * 8);
     background-color: var(--color-light);
-    border: 1px solid;
+    border: 1px solid var(--color-light-dark);
 }
 
 
@@ -107,17 +107,22 @@ ul {
     padding-left: 10px;
 }
 
-[class^="user_"],.profile, .notification, .box_search {
+[class^="user_"],
+.profile,
+.notification,
+.box_search {
     display: flex;
     align-items: center;
     padding-left: 8px;
     padding-right: 10px;
     gap: 10px;
     height: 70px;
+
 }
 
 .selection:hover {
     background-color: var(--color-light-dark);
+
 }
 
 .right {
@@ -172,10 +177,13 @@ ul {
     margin-left: auto;
 }
 
-.search{
+.search {
     background-color: white;
     width: 100%;
-    padding: 10px;
+    padding-left: 20px;
+    color: var(--color-light-dark);
+    font-size:20px;
+    
 }
 
 input {
@@ -183,9 +191,18 @@ input {
     height: 30px;
 }
 
-.write {
+form {
     width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
+input {
+    padding: 1rem;
+    border-style: none;
+    outline: none;
 }
 
 .emoji {
